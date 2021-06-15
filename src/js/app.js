@@ -17,14 +17,14 @@ function loadComments(data) {
   container.appendChild(listEl)
   for (var i = 0; i < data.length; i++) {
     const listItemEl = document.createElement("li")
-    listItemEl.className = 'comments-item';
+    listItemEl.className = 'comment-item';
     listItemEl.insertAdjacentHTML(
       'afterbegin',
-      `<div class="comments-header flex">
-        <h3 class="comments-heading">${data[i].name}</h3>
-        <span class="comments-likes">${data[i].likes} Likes</span>
+      `<div class="comment-header flex">
+        <h3 class="comment-heading">${data[i].name}</h3>
+        <span class="comment-likes">${data[i].likes} Likes</span>
       </div>
-      <div class="comments-body">
+      <div class="comment-body">
         <p>${data[i].body}</p>
       </div>`
     )
