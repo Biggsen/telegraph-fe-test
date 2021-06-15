@@ -6,6 +6,7 @@ fetch('https://my-json-server.typicode.com/telegraph/front-end-exercise-contract
     .then(res => res.json())
     .then(data => {
       loadComments(data)
+      commentsCount(data.length)
     })
     .catch(err => {
         console.log(`Error with message: ${err}`)
@@ -30,4 +31,9 @@ function loadComments(data) {
     )
     listEl.appendChild(listItemEl)
   }
+}
+
+function commentsCount(count){
+  const commentsCount = document.getElementById("commentsCount")
+  commentsCount.insertAdjacentHTML('afterbegin', `${count} `)
 }
