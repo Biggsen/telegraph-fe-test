@@ -1,0 +1,18 @@
+.comments-item {
+    padding-top: 1em;
+    border-top: 1px solid #ddd;
+}
+
+@media (min-width: 700px) {
+    .comments-body {
+        padding-right: 16.7%;
+    }
+}
+
+.comments-header {
+    padding-bottom: .3em;
+}
+
+.comments-likes {
+    font-size: .9em;
+}
