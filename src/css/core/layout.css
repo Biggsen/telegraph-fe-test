@@ -3,6 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 1em;
   grid-row-gap: 1em;
+  padding: 0 1em;
 }
 
 .width-body {
@@ -11,6 +12,12 @@
 
 @media (min-width: 700px) {
   .width-body {
-    grid-column: 2 / span 6;
+    grid-column: 3 / span 6;
   }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
